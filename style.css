@@ -33,13 +33,60 @@ body{
 .nav-link {
     text-decoration: none;
     color: white;
+    padding: 5px 10px;
 }
 .nav-link:hover{
     color: rgb(149, 238, 33);
-    font-size: 1.1em;
+    font-size: 1em;
+    background-color:  #ec8ad4;
+   
+    
 }
-
+.donateBtn{
+    background-color: #bc88df;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1em;
+}
+.donateBtn:hover{
+    background-color: rgb(151, 93, 189);
+    border: none;
+}
 .image-slider{
     display: flex;
     justify-content: center;
+}
+.activity-container{
+    justify-content: center;
+    margin-top: 30px;
+}
+.activity-header{
+    text-align: center;
+}
+.activities{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.activity{
+    
+    background-color: #a25ef0;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+}
+
+.activity>img{
+    width: 40%;
+}
+.activity>p{
+    text-align: center;
 }
