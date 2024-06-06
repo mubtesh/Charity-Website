@@ -58,9 +58,14 @@ body{
     display: flex;
     justify-content: center;
 }
+.main-container{
+    background: linear-gradient(90deg, rgb(185, 115, 231,.8),rgba(221, 68, 119,.7)), url(./images/charity.png),center, no-repeat;
+}
+
 .activity-container{
     justify-content: center;
     margin-top: 30px;
+    
 }
 .activity-header{
     text-align: center;
