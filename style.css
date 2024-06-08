@@ -1,8 +1,9 @@
 body{
     max-width: 1280px;
-    padding:0 5%;
     background:linear-gradient(90deg, rgb(198, 146, 233),rgb(230, 93, 139));
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: auto;
 }
 .nav{
     display: flex;
@@ -12,22 +13,19 @@ body{
     margin: auto;
 }
 .nav-logo{
-    padding: 10px 20px;
+    padding: 10px;
 }
-.nav-menu{
-    width: 50%;
-}
+
 .nav-list{
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    border-width: 1px;
+    align-items: center;
+    padding-left: 0;
 }
 .nav-item{
     list-style: none;
     color: white;
-    padding:5px 10px;
-    border-radius: 5px;
+   
     transition: 0.2s;
 }
 .nav-item:hover{
@@ -56,6 +54,7 @@ body{
     color: white;
     font-size: 1rem;
     cursor: pointer;
+    margin-right: .5rem;
 }
 .donateBtn:hover{
     background-color: rgb(151, 93, 189);
@@ -69,6 +68,7 @@ body{
 }
 .main-container{
     background: linear-gradient(90deg, rgb(185, 115, 231,.8),rgba(221, 68, 119,.7)), url(./images/charity.png),center, no-repeat;
+    padding: 1em;
 }
 
 .activity-container{
@@ -89,14 +89,13 @@ body{
 }
 
 .activity{
-    
     background-color: #a25ef0;
     color: white;
     border-radius: 10px;
     width: 250px;
     text-align: center;
     padding: 10px;
-    height: 300px;
+    height: 275px;
 }
 
 .activity>img{
@@ -106,7 +105,7 @@ body{
 
 .pricing-container{
     text-align: center;
-    margin: 3em 0;
+    
 }
 .pricing-types{
     display: flex;
@@ -176,13 +175,25 @@ body{
 
 
   /* Hint: What can you do with a media query and flexbox? */
-  @media (max-width: 540px) {
-    .pricing-container{
+  @media (max-width: 640px) {
+    .image-slider{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .activity{
+        width: 70%;
+        text-align: center;
+        
+    }
+    .pricing-types{
+       
       display: flex;
       flex-direction: column;
   }
-  .pricing-plan{
   
+  .pricing-plan{
+    
     border-radius: 20px;
     width: 70%;
     text-align: center;
